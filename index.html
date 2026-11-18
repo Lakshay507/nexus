@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Amazon | Shop Everything</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#">mini<span>amazon</span><b>.</b></a>
+    <div class="delivery">Deliver to <strong>India</strong></div>
+    <form class="search" id="searchForm">
+      <select id="categorySelect" aria-label="Category"><option value="all">All</option><option>Electronics</option><option>Fashion</option><option>Home</option><option>Books</option></select>
+      <input id="searchInput" type="search" placeholder="Search Mini Amazon" aria-label="Search products">
+      <button type="submit" aria-label="Search">⌕</button>
+    </form>
+    <div class="header-actions">
+      <button class="header-link" id="accountBtn">Hello, Guest<br><strong>Account</strong></button>
+      <button class="header-link" id="ordersBtn">Returns<br><strong>& Orders</strong></button>
+      <button class="cart-link" id="cartJump">🛒 <strong>Cart <span id="cartCount">0</span></strong></button>
+    </div>
+  </header>
+  <nav class="nav">
+    <button id="allProducts">☰ All</button><a href="#products">Today's Deals</a><a href="#products">Customer Service</a><a href="#products">Gift Cards</a><a href="#products">Sell</a>
+    <span>Great deals. Great finds. Every day.</span>
+  </nav>
+  <main>
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">THE EVERYDAY SHOPPING DESTINATION</p><h1>Find your next<br><em>favourite thing.</em></h1><p>Good products, great prices, and a little joy in every delivery.</p><a href="#products" class="shop-btn">Explore products <span>→</span></a></div>
+      <div class="hero-art"><div class="orb"></div><div class="hero-card card-one">🎧<small>Tech picks</small></div><div class="hero-card card-two">👟<small>Fresh style</small></div><div class="hero-card card-three">☕<small>Home finds</small></div><div class="hero-sticker">UP TO<br><b>40% OFF</b></div></div>
+    </section>
+    <section class="benefits"><div>🚚 <span><b>Fast delivery</b><small>At your doorstep</small></span></div><div>🔒 <span><b>Secure checkout</b><small>Shop with confidence</small></span></div><div>↩️ <span><b>Easy returns</b><small>Hassle-free shopping</small></span></div><div>✨ <span><b>Curated picks</b><small>Something for everyone</small></span></div></section>
+    <section class="section-head" id="products"><div><p class="eyebrow">HANDPICKED FOR YOU</p><h2>Explore our collection</h2></div><div class="filters"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="Electronics">Electronics</button><button class="filter" data-filter="Fashion">Fashion</button><button class="filter" data-filter="Home">Home</button><button class="filter" data-filter="Books">Books</button></div></section>
+    <div class="product-grid" id="productGrid"></div>
+    <section class="cart-section" id="cart"><div class="cart-title"><div><p class="eyebrow">YOUR BAG</p><h2>Shopping cart</h2></div><span id="cartSubtotal">Subtotal (0 items): ₹0</span></div><div id="cartItems" class="cart-items"><p class="empty">Your cart is waiting for something good.</p></div><div class="checkout-row"><p>Orders are just a few clicks away.</p><button id="checkoutBtn" class="checkout-btn">Proceed to checkout →</button></div></section>
+  </main>
+  <footer><a class="logo" href="#">mini<span>amazon</span><b>.</b></a><p>A mini e-commerce demo made with HTML, CSS & JavaScript.</p><small>© 2026 Mini Amazon. For educational use only.</small></footer>
+  <div class="toast" id="toast"></div>
+  <div class="modal-backdrop" id="modal"><div class="modal"><button class="close" id="closeModal">×</button><div id="modalContent"></div></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
